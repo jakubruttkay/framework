@@ -1,3 +1,3 @@
-<?php
-    $response->setContent('Bye');
+<?php ?>
+bye page
 

@@ -3,6 +3,6 @@
     <li>How are you 2</li>
     <li>How are you 3</li>
 </ul>
-<?php
+<?php ?>
 
-    $response->setContent('Hello');
+

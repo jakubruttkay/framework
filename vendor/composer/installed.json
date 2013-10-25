@@ -1,32 +1,37 @@
 [
     {
         "name": "symfony/class-loader",
-        "version": "v2.1.11",
-        "version_normalized": "2.1.11.0",
+        "version": "v2.3.6",
+        "version_normalized": "2.3.6.0",
         "target-dir": "Symfony/Component/ClassLoader",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/ClassLoader.git",
-            "reference": "v2.1.11"
+            "reference": "e5f3ef7ebd965a12699984df06b2a5bd439bd2a0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/v2.1.11",
-            "reference": "v2.1.11",
+            "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/e5f3ef7ebd965a12699984df06b2a5bd439bd2a0",
+            "reference": "e5f3ef7ebd965a12699984df06b2a5bd439bd2a0",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
         "require-dev": {
-            "symfony/finder": "2.1.*"
+            "symfony/finder": "~2.0"
         },
-        "time": "2013-05-06 10:48:41",
+        "time": "2013-09-19 09:45:20",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3-dev"
+            }
+        },
         "installation-source": "dist",
         "autoload": {
             "psr-0": {
-                "Symfony\\Component\\ClassLoader": ""
+                "Symfony\\Component\\ClassLoader\\": ""
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -48,31 +53,38 @@
     },
     {
         "name": "symfony/http-foundation",
-        "version": "v2.1.11",
-        "version_normalized": "2.1.11.0",
+        "version": "v2.3.6",
+        "version_normalized": "2.3.6.0",
         "target-dir": "Symfony/Component/HttpFoundation",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/HttpFoundation.git",
-            "reference": "v2.1.11"
+            "reference": "59e712338cd05463ebcb8da6422a01b1291871e3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/v2.1.11",
-            "reference": "v2.1.11",
+            "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/59e712338cd05463ebcb8da6422a01b1291871e3",
+            "reference": "59e712338cd05463ebcb8da6422a01b1291871e3",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2013-05-26 18:42:07",
+        "time": "2013-09-29 19:41:41",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3-dev"
+            }
+        },
         "installation-source": "dist",
         "autoload": {
             "psr-0": {
-                "Symfony\\Component\\HttpFoundation": "",
-                "SessionHandlerInterface": "Symfony/Component/HttpFoundation/Resources/stubs"
-            }
+                "Symfony\\Component\\HttpFoundation\\": ""
+            },
+            "classmap": [
+                "Symfony/Component/HttpFoundation/Resources/stubs"
+            ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -89,6 +101,66 @@
             }
         ],
         "description": "Symfony HttpFoundation Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/routing",
+        "version": "v2.3.6",
+        "version_normalized": "2.3.6.0",
+        "target-dir": "Symfony/Component/Routing",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Routing.git",
+            "reference": "7d41463094752e87a0fae60316d236abecb8a034"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Routing/zipball/7d41463094752e87a0fae60316d236abecb8a034",
+            "reference": "7d41463094752e87a0fae60316d236abecb8a034",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "doctrine/common": "~2.2",
+            "psr/log": "~1.0",
+            "symfony/config": "~2.2",
+            "symfony/yaml": "~2.0"
+        },
+        "suggest": {
+            "doctrine/common": "",
+            "symfony/config": "",
+            "symfony/yaml": ""
+        },
+        "time": "2013-09-29 19:41:41",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Routing\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Routing Component",
         "homepage": "http://symfony.com"
     }
 ]

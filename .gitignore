@@ -4,3 +4,5 @@ vendor/
 .buildpath
 .project
 .settings
+.idea/
+atlassian-ide-plugin.xml

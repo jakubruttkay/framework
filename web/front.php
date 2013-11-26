@@ -12,10 +12,7 @@ use Symfony\Component\Routing\Matcher\UrlMatcher;
 
 $request = Request::createFromGlobals();
 
-//$map = array(
-//    '/hello' => __DIR__.'/../src/pages/hello.php',
-//    '/bye'   => __DIR__.'/../src/pages/bye.php',
-//);
+$routes = include __DIR__.'/../src/app.php';
 $routes = new RouteCollection();
 $routes->add('hello', new Route('/hello/{name}', array('name'=>'World')));
 $routes->add('bye', new Route('/bye'));
